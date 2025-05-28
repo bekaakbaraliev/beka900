@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PS4 Jailbreak 9.00</title>
+  <style>
+    body {
+      margin: 0;
+      background-image: url('background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: sans-serif;
+    }
+  </style>
+  <script src="exploit.js" defer></script>
+</head>
+<body>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function() {
+    console.log("Service Worker зарегистрирован для оффлайн-доступа.");
+  });
+}
+</script>
+
+</body>
+</html>
